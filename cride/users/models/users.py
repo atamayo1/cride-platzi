@@ -34,7 +34,7 @@ class User(CRideModel, AbstractUser):
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username','first_name', 'last_name']
-    is_clients = models.BooleanField(
+    is_client = models.BooleanField(
         'client status', 
         default=True, 
         help_text=(
